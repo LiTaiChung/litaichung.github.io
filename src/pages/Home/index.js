@@ -14,14 +14,17 @@ const Banner = () => {
         <div className="container mx-auto py-4 bg-gray relative z-10 overflow-hidden lg:flex items-center">
             <div className="flex-1">
                 <div className="text-center lg:text-left px-5 lg:px-0 pt-150 lg:pt-0">
-                    <h2 className="hero_title text-2xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl font-extrabold">
-                        Welcome!
+                    <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl font-extrabold">
+                        Hi! I'm Ice -
+                    </h2>
+                    <h2 className="text-gray-500 dark:text-white text-2xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl font-extrabold">
+                        Full Stack Engineer
                     </h2>
                     <div className="mt-8 lg:mr-8">
-                        歡迎來到Ice的網頁.
-                        此網頁以React製作
-                        <div>Welcome To Ice Website.
-                        This Website create by React</div>
+                        <div>
+                            Welcome To Ice Website.
+                            This Website created by React
+                        </div>
                     </div>
 
                     <div className="mt-10 mb-8 lg:mb-0">
