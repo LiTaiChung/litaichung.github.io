@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
     return (
-        <div className="relative">
+        <div className="relative h-screen">
             <Banner />
         </div>
     );
