@@ -1,4 +1,6 @@
 import Layout from 'layout';
+import PublicLayout from 'layout/Public';
+import PrivateLayout from 'layout/Private';
 import Page403 from 'pages/403';
 import Page404 from 'pages/404';
 import Home from 'pages/Home';
@@ -19,24 +21,36 @@ const routes = [
         element: <Layout />,
         children: [
             {
-                path: '/',
-                index: true,
-                element: <Home />,
-            },
-            {
-                path: 'project',
-                element: <Project />,
+                element: <PublicLayout />,
                 children: [
                     {
-                        path: ':projectId',
-                        element: <ProjectItem />,
+                        path: '/',
+                        index: true,
+                        element: <Home />,
+                    },
+
+                    {
+                        path: 'contact',
+                        element: <Contact />,
                     },
                 ]
             },
             {
-                path: 'contact',
-                element: <Contact />,
-            },
+                element: <PrivateLayout />,
+                children: [
+                    {
+                        path: 'project',
+                        element: <Project />,
+                        children: [
+                            {
+                                path: ':projectId',
+                                element: <ProjectItem />,
+                            },
+                        ]
+                    },
+                ]
+            }
+            
         ],
     }
 ];
