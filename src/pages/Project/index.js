@@ -2,10 +2,10 @@ import React from "react";
 
 export default function Project() {
     return (
-        <div className="dark:bg-gray-900">
+        <div>
             <div className="container mx-auto p-6">
                 <section>
-                    <header className="bg-white dark:bg-gray-900 space-y-4 p-4 sm:px-8 sm:py-6 lg:p-4 xl:px-8 xl:py-6">
+                    <header className="space-y-4 p-4 sm:px-8 sm:py-6 lg:p-4 xl:px-8 xl:py-6">
                         <div className="flex items-center justify-between">
                             <h2 className="font-semibold text-slate-900 dark:text-white">Projects</h2>
                         </div>
