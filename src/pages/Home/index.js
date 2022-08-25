@@ -11,12 +11,11 @@ export default function Home() {
                         <div className="w-full lg:w-1/2">
                             <div className="header_hero_content pt-150 lg:pt-0">
                                 <h2 className="hero_title text-2xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl font-extrabold">
-                                    Creative Multipurpose Tailwind CSS{" "}
-                                    <span className="text-theme-color">
-                                        Template
-                                    </span>
+                                    Welcome,
+                                    <div>& Hello</div>
                                 </h2>
                                 <p className="mt-8 lg:mr-8">
+                                    歡迎來到Ice的網頁
                                     Lorem ipsum dolor sit amet, consetetur
                                     sadipscing elitr, sed diam nonumy eirmod
                                     tempor invidunt ut labore et dolore magna.

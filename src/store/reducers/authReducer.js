@@ -18,7 +18,7 @@ const initialState = {
     user,
 };
 
-export default function AuthReducer(state = initialState, {type, payload = null}) {
+export default function authReducer(state = initialState, {type, payload = null}) {
     switch (type) {
         case AUTH_REFRESH_TOKEN:
             return refreshToken(state, payload);
@@ -30,6 +30,8 @@ export default function AuthReducer(state = initialState, {type, payload = null}
             return checkAuth(state);
         case AUTH_USER:
             return authUser(state, payload);
+        default:
+            return state;
     }
 }
 
