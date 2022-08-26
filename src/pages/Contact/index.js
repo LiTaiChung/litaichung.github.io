@@ -5,6 +5,7 @@ export default function Contact() {
         <div className="h-screen">
             <div className="container mx-auto py-10">
                 <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-600 overflow-hidden sm:rounded-lg">
+
                     <div className="px-4 py-5 sm:px-6">
                         <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-white">
                             Applicant Information
@@ -13,6 +14,7 @@ export default function Contact() {
                             Personal details and application.
                         </p>
                     </div>
+                    
                     <div className="border-t border-gray-200 dark:border-gray-600">
                         <dl>
                             <div className="bg-gray-50 dark:bg-gray-800 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">

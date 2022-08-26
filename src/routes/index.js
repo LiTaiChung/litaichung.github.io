@@ -7,13 +7,13 @@ const GetRoutes = () => {
 }
 
 const SetRoutes = () => {
-    return (<>
+    return (
         <HashRouter>
-            {/* <BrowserRouter> */}
-                <GetRoutes />
-            {/* </BrowserRouter> */}
+        {/* <BrowserRouter> */}
+            <GetRoutes />
+        {/* </BrowserRouter> */}
         </HashRouter>
-    </>);
+    );
 }
 
 export default SetRoutes;

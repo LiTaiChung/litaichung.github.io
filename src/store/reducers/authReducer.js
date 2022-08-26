@@ -11,6 +11,7 @@ const user = {
     id: "",
     name: "",
     email: "",
+    avatar: "",
 };
 
 const initialState = {
@@ -47,7 +48,6 @@ const login = (state, payload) => {
     return {
         ...state,
         isAuthenticated: true,
-        homeNews: true,
     }
 };
 
@@ -85,14 +85,13 @@ const logout = (state) => {
         ...state,
         isAuthenticated: false,
         user,
-        homeNews: false,
-        expireHomeNews: null,
     }
 };
 
-const authUser = (state, user) => {
+const authUser = (state, payload) => {
     return {
-        ...state, user: user.data
+        ...state,
+        user: { ...state.user, ...payload }
     }
 }
 

@@ -29,7 +29,7 @@ export default function Project() {
         <div>
             <div className="container mx-auto p-6">
                 <section>
-                    <header className="space-y-4 p-4 sm:px-8 sm:py-6 lg:p-4 xl:px-8 xl:py-6">
+                    <div className="space-y-4 p-4 sm:px-8 sm:py-6 lg:p-4 xl:px-8 xl:py-6">
                         <div className="flex items-center justify-between">
                             <h2 className="font-semibold text-slate-900 dark:text-white">
                                 Projects
@@ -56,7 +56,7 @@ export default function Project() {
                                 placeholder="Filter projects..."
                             />
                         </form>
-                    </header>
+                    </div>
 
                     <ul className="bg-slate-50 dark:bg-gray-900 p-4 sm:px-8 sm:pt-6 sm:pb-8 lg:p-4 xl:px-8 xl:pt-6 xl:pb-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 text-sm leading-6">
                         {
