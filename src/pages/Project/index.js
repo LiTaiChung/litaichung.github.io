@@ -1,13 +1,39 @@
 import React from "react";
 
 export default function Project() {
+
+    const fakeData = [
+        {
+            title: "Noteworthy technology acquisitions 2021",
+            text: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."
+        },
+        {
+            title: "Noteworthy technology acquisitions 2021",
+            text: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."
+        },
+        {
+            title: "Noteworthy technology acquisitions 2021",
+            text: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."
+        },
+        {
+            title: "Noteworthy technology acquisitions 2021",
+            text: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."
+        },
+        {
+            title: "Noteworthy technology acquisitions 2021",
+            text: "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."
+        },
+    ];
+
     return (
         <div>
             <div className="container mx-auto p-6">
                 <section>
                     <header className="space-y-4 p-4 sm:px-8 sm:py-6 lg:p-4 xl:px-8 xl:py-6">
                         <div className="flex items-center justify-between">
-                            <h2 className="font-semibold text-slate-900 dark:text-white">Projects</h2>
+                            <h2 className="font-semibold text-slate-900 dark:text-white">
+                                Projects
+                            </h2>
                         </div>
                         <form className="group relative">
                             <svg
@@ -33,12 +59,9 @@ export default function Project() {
                     </header>
 
                     <ul className="bg-slate-50 dark:bg-gray-900 p-4 sm:px-8 sm:pt-6 sm:pb-8 lg:p-4 xl:px-8 xl:pt-6 xl:pb-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 text-sm leading-6">
-                        <Item />
-                        <Item />
-                        <Item />
-                        <Item />
-                        <Item />
-                        <Item />
+                        {
+                            fakeData.map((item, key) => <CardItem key={key} {...item} />)
+                        }
                     </ul>
                 </section>
             </div>
@@ -46,7 +69,9 @@ export default function Project() {
     );
 }
 
-const Item = () => {
+const CardItem = (props) => {
+    const { title, text } = props;
+
     return (
         <li className="max-w-sm bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 mb-10">
             <a href="#">
@@ -59,12 +84,11 @@ const Item = () => {
             <div className="p-5">
                 <a href="#">
                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                        Noteworthy technology acquisitions 2021
+                        { title }
                     </h5>
                 </a>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                    Here are the biggest enterprise technology acquisitions of
-                    2021 so far, in reverse chronological order.
+                    { text }
                 </p>
                 <a
                     href="#"
