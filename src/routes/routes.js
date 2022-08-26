@@ -14,7 +14,7 @@ const routes = [
         element: <Page403 />,
     },
     {
-        path: '404',
+        path: '/*',
         element: <Page404 />,
     },
     {
