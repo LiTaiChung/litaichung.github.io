@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Contact() {
     return (
-        <div className="h-screen">
+        <div>
             <div className="container mx-auto py-10">
                 <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-600 overflow-hidden sm:rounded-lg">
 
