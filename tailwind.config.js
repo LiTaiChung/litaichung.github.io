@@ -13,6 +13,7 @@ module.exports = {
         'height': 'height',
         'spacing': 'margin, padding',
         'top': 'top',
+        'visibility': 'visibility',
       }
     },
     // screens: {
