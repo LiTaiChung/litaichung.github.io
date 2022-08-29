@@ -57,11 +57,11 @@ const NavMenu = () => {
 
     return (
         <div
-            className={`fixed z-[-1] top-[59px] bottom-0 left-0 right-0 transition-[visibility] duration-500 invisible data-active:visible md:relative md:z-[0] md:top-[0] md:data-active:top-[0] md:visible md:text-sm md:font-medium md:border-0 md:space-x-6`}
+            className={`fixed z-[-1] top-[59px] bottom-0 left-0 right-0 transition-[visibility] duration-500 invisible data-active:visible md:relative md:z-[0] md:top-[0] md:data-active:top-[0] md:visible md:text-sm md:font-medium md:border-0 md:space-x-6 md:transition-none`}
             data-active={menuToggle}
         >
             <div
-                className="absolute top-[-100%] left-0 h-full w-full transition-[top] duration-500 md:transition-none bg-white dark:bg-gray-900 data-active:top-[0px] md:relative md:data-active:top-0"
+                className="absolute top-[-100%] left-0 h-full w-full transition-[top] duration-500 bg-white dark:bg-gray-900 data-active:top-[0px] md:relative md:data-active:top-0 md:transition-none"
                 data-active={menuToggle}
             >
                 <ul className=" flex flex-col text-white p-4 md:pr-0 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
