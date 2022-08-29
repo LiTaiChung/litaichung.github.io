@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FacebookLoginProvider, FacebookButton, GoogleLoginProvider, GoogleButton } from "components/social";
+import { FacebookLoginProvider, FacebookButton, GoogleLoginProvider, GoogleButton } from "components/Social";
 
 export default function Home() {
     return (
-        <div className="relative h-screen">
+        <div className="relative">
             <Banner />
             <FacebookLoginProvider>
                 <FacebookButton />

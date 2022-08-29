@@ -1,5 +1,5 @@
 import React from 'react';
-import FacebookIcon from 'components/icon/FacebookIcon'
+import FacebookIcon from 'components/Icons/FacebookIcon'
 
 export default function FacebookButton({ icon, text, className, children, ...props }) {
     return (

@@ -9,12 +9,12 @@ export default function Layout() {
     const darkMode = useSelector((state) => state.theme.darkMode);
 
     return (
-        <main className={darkMode ? 'dark' : ''}>
+        <div className={darkMode ? 'dark' : ''}>
             <Header />
             <Content>
                 <Outlet />
             </Content>
             <Footer />
-        </main>
+        </div>
     )
 }

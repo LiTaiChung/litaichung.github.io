@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Content({ children }) {
     return (
-        <div className="main bg-white dark:bg-gray-900 dark:text-white">
+        <main className="bg-white mt-[59px] dark:bg-gray-900 dark:text-white md:mt-[73px]">
             { children }
-        </div>
+        </main>
     )
 }

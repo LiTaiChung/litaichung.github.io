@@ -1,5 +1,5 @@
 import React from 'react';
-import GoogleIcon from 'components/icon/GoogleIcon';
+import GoogleIcon from 'components/Icons/GoogleIcon';
 
 export default function GoogleButton({ icon, text, className, children, ...props }) {
     return (
