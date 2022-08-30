@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import ModalPortal from "components/ModalPortal";
 import CloseButton from "components/Button/CloseButton";
 import Backdrop from "components/Backdrop";

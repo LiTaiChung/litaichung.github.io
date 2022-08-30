@@ -6,12 +6,6 @@ export default function Home() {
     return (
         <div className="relative">
             <Banner />
-            <FacebookLoginProvider>
-                <FacebookButton />
-            </FacebookLoginProvider>
-            <GoogleLoginProvider>
-                <GoogleButton />
-            </GoogleLoginProvider>
         </div>
     );
 }
