@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Modal, { ModalBody } from "components/Modal/Default";
+import Modal, { ModalBody, ModalHeader } from "components/Modal/ModalDefault";
 import ModalForm, {
     FormInputGroup,
     FormInputLabel,
@@ -10,6 +10,7 @@ import CloseButton from "components/Button/CloseButton";
 
 const LoginButton = () => {
     const [toggle, setToggle] = useState(false);
+
     return (
         <>
             <button
@@ -19,7 +20,7 @@ const LoginButton = () => {
                 Login
             </button>
 
-            {toggle && (
+     
                 <Modal toggle={toggle} setToggle={setToggle} size="md">
                     <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
                         <CloseButton
@@ -53,7 +54,6 @@ const LoginButton = () => {
                                             />
                                         </div>
                                         <label
-                                            for="remember"
                                             className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                                         >
                                             Remember me
@@ -90,7 +90,6 @@ const LoginButton = () => {
                         </ModalBody>
                     </div>
                 </Modal>
-            )}
         </>
     );
 };
