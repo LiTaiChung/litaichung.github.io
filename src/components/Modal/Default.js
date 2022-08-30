@@ -4,15 +4,39 @@ import CloseButton from "components/Button/CloseButton";
 import Backdrop from "components/Backdrop";
 
 export default function DefaultModal({ children, ...props }) {
-    const { toggle, className, position } = props;
+    const { toggle, className, position, size } = props;
+
+    const modalSize = () => {
+        switch (size) {
+            case "sm":
+                return "max-w-sm";
+            case "md":
+                return "max-w-md";
+            case "lg":
+                return "max-w-lg";
+            case "2xl":
+                return "max-w-2xl";
+            default:
+                return "max-w-2xl";
+        }
+    }
+
+    const modalPosition = () => {
+        switch (position) {
+            case "center":
+                return "h-auto";
+            case "full":
+                return "h-full";
+            default:
+                return "h-auto";
+        }
+    }
 
     return (
         <ModalPortal>
             <Backdrop toggle={toggle}>
                 <div
-                    className={`relative p-4 w-full max-w-2xl${
-                        position === "center" || !position ? " h-auto" : ""
-                    }${position === "full" ? " h-full" : ""}`}
+                    className={`relative p-4 w-full ${modalSize()} ${modalPosition()}`}
                 >
                     <div
                         className={`relative bg-white rounded-lg shadow dark:bg-gray-700 ${

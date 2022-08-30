@@ -21,7 +21,7 @@ export default function FacebookLoginProvider({ children }) {
     return (
         <FacebookLogin
             appId={appId}
-            autoLoad={false}
+            autoLoad={true}
             fields="name,email,picture"
             scope="public_profile"
             callback={responseFacebook}
