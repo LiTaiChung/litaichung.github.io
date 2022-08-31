@@ -28,20 +28,17 @@ const routes = [
                         index: true,
                         element: <Home />,
                     },
-
                     {
                         path: 'contact',
                         element: <Contact />,
                     },
-                ]
-            },
-            {
-                element: <PrivateLayout />,
-                children: [
                     {
                         path: 'project',
-                        element: <Project />,
                         children: [
+                            {
+                                index: true,
+                                element: <Project />,
+                            },
                             {
                                 path: ':projectId',
                                 element: <ProjectItem />,
@@ -49,8 +46,7 @@ const routes = [
                         ]
                     },
                 ]
-            }
-            
+            },
         ],
     }
 ];
