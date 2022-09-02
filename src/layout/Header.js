@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { updateDarkMode } from "store/actions/theme";
@@ -12,6 +12,12 @@ export default function Header() {
     const dispatch = useDispatch();
     const context = useContext(GlobalContext);
     const { menuToggle, setMenuToggle } = context;
+
+    useEffect(() => {
+        darkMode ? document.body.classList.add('dark') : document.body.classList.remove('dark');
+
+        return () => document.body.classList.remove('dark')
+    }, [darkMode])
 
     return (
         <header className="fixed w-full top-[0] z-[50]">

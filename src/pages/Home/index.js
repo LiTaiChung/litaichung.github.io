@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FacebookLoginProvider, FacebookButton, GoogleLoginProvider, GoogleButton } from "components/Social";
 
 export default function Home() {
     return (
